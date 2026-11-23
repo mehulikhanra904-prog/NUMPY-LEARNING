@@ -1,0 +1,41 @@
+import numpy as np
+
+#Element wise arithmetic operations 
+array1= np.array([1,2,3,4]) 
+
+
+
+array2= np.array([5,6,7,8]) 
+print(array1 + array2)
+print(array1 - array2)
+print(array1 * array2)
+print(array1 / array2)
+
+#comparision operators 
+scores = np.array([90,80,70,50,40,30,20,10])
+print(scores > 50)
+print(scores < 50)
+print(scores == 50)
+print(scores != 50)
+print(scores >= 50)
+print(scores <= 70)
+print(scores[scores > 50])
+
+array1 = np.array([[9,0,89,80]])
+array2 = np.array([[7,8,9,67]])
+print(array1.shape)
+print(array2.shape)
+print(array1 + array2)
+print(array1 - array2)
+print(array1 * array2)
+print(array1 / array2)
+print(array1 > array2)
+print(array1 < array2)
+print(array1 == array2)
+array1 = np.array([[1,2,3,4],
+                   [5,6,7,8],
+                  [9,10,11,12]])
+array2 = np.array([[1,2],[2,3],[3,4],[4,5]])
+print(array1.shape)
+print(array2.shape)
+print(np.matmul(array1,array2))

@@ -1,0 +1,107 @@
+import numpy as np
+
+# Basic array
+ar = np.array([10, 20, 30, 40])
+print(ar)
+print(ar.mean())
+
+# Python list multiplication
+my_list = [1, 2, 3, 4]
+my_list = my_list * 2
+print(my_list)
+
+# NumPy array
+array = np.array([1, 2, 3, 4])
+print(array)
+print(type(array))
+print(array.shape)
+
+# 3D array
+array = np.array([
+    [['A', 'B', 'C'], ['D', 'E', 'F'], ['G', 'H', 'I']],
+    [['j', 'k', 'l'], ['m', 'n', 'o'], ['p', 'q', 'r']],
+    [['s', 't', 'u'], ['v', 'w', 'x'], ['y', 'z', 'm']]
+])
+
+print(array.ndim)
+print(array.shape)
+print(array.dtype)
+print(array.itemsize)
+print(array.nbytes)
+
+# 2D array
+a = np.array([
+    [1, 2, 3, 4, 5, 6, 7, 8],
+    [9, 10, 11, 12, 13, 14, 15, 16]
+])
+
+print(a)
+
+# Specific element
+print(a[1, 5])
+
+# Specific row
+print(a[0, :])
+
+# Specific column
+print(a[:, 2])
+
+# Slicing
+print(a[0, 1:-1:2])
+
+# Replace element
+a[1, 5] = 20
+print(a)
+
+# Replace column
+a[:, 2] = [1, 2]
+print(a)
+
+# All zeros matrix
+zeros = np.zeros((2, 3, 3, 2))
+print(zeros)
+
+#All 1's matrix 
+np.ones((4,2,2), dtype = 'int32')
+
+#any other number 
+np.full((2,2),99)
+
+# any other number(full_line)
+np.full(a.shape,4)
+
+#random decimal numbers 
+np.random.rand(4,2)
+print(np.ones((4, 2, 2), dtype='int32'))
+
+print(np.full((2, 2), 99))
+
+print(np.full(a.shape, 4))
+
+print(np.random.rand(4, 2))
+
+#Random integer  values
+np.random.randint(-4,7, size=(3,3))
+print(np.random.randint(7))
+
+
+
+# 3x3 Zero Matrix
+z = np.zeros((3, 3))
+z[1, 1] = 9
+print(z)
+
+# Replace Middle Elements
+output[1:-1, 1:-1] = z
+print(output)
+
+a=np.array([1,2,3])
+b = a.copy()
+b[0]= 100 
+print(a)
+ 
+a = np.array([1,2,3])
+print(a)
+a + 2
+# take the sin 
+np.cos(a)
